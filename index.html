@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./images/IMG_0871.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/Portfolio.css">
+    <script src="https://kit.fontawesome.com/c6a50971fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">Valerie<span> Colaco</span>.</h2>
+                <ul id="sidemenu">
+
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark gg" onclick="closepan()"></i>
+                </ul>
+                <i class="fa-solid fa-bars gh" onclick="openpan()"></i>
+            </nav>
+        </div>
+    </div>
+    <div id="home">
+        <div class="container">
+            <div class="homerow">
+                <div class="homecol1">
+                    <div class="heading-text">
+                        <h3>Full Stack developer, Software / Web Developer / Web Designer</h3>
+                        <h4>Hello, This is
+                            <span>Valerie</span>
+                            <br>Genevieve Colaco,
+                        </h4>
+                    </div>
+                    <div class="profilelink">
+                        <a href="./images/Valerie Colaco - Resume (1).pdf" target="_blank"> <i
+                                class="fa-solid fa-arrow-up-right-from-square"></i>Click here to view my complete
+                            profile</a>
+
+                    </div>
+                </div>
+                <div class="homecol2">
+                    <img src="./images/IMG_0871.JPG" alt="">
+                </div>
+
+            </div>
+            <div class="stickylink">
+                <a href="#header"><i class="fa-regular fa-circle-up"></i></a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- About Section -->
+
+
+    <div id="about">
+        <div class="container1">
+
+            <div class="row">
+                <div class="about-col1">
+                    <img src="./images/IMG_0871.JPG" alt="">
+
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="divp">
+                        <p>As a software/ web developer,
+                            I write robust and efficient code that in turn creates user friendly, interactive and cost
+                            effective
+                            applications providing good user interface and user experience.
+                            <br>Young and Energetic with good communication and analytical skills, positive attitude,
+                            sincere and
+                            hardworking, willing to learn and work on the latest technologies. Ability to take
+                            responsibilities
+                            in an organized manner.
+                            Can take decisions, work independently. Well versed with the latest programming languages in
+                            front
+                            end and back end technologies. Develop solutions that automate processes and promote the
+                            business
+                            activites through its website. Efficiently delivering the product on time and as per the
+                            requirements of the customers.
+                        </p>
+                    </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer</span><br>HTML, CSS, Javascript, Angular JS, Express JS, Node
+                                JS, Mongo DB</li>
+                            <li><span>Frontend Developer</span><br>HTML, CSS, Javascript, Angular JS, Express JS</li>
+                            <li><span>Backend Developer</span><br>Node JS, Mongo DB</li>
+                            <li><span>Software / Web Developer</span><br>HTML, CSS, Angular JS, Express JS, Node JS,
+                                Mongo DB, Python, SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Full Stack course with Python & SQL from Livetech India</span><br>2023</li>
+                            <li><span>Masters of Science in Information Technology (CGPA of 5.50)</span><br>2015</li>
+                            <li><span>Bachelors of Science in Information Technology (First Class)</span><br>2013</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>IT/HR Manager (From 01-12-2016 to Present)</span><br>Presently working for
+                                Maritime
+                                Training and Research Foundation (MTRF), Andheri (East),
+                                Mumbai, India</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- -----------------------Services ------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="maindiv">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3 style="font-size:25px; margin-bottom: 10px;">Web Application Development</h3>
+                    <div class="divp">
+                        <p style="text-align:justify;">Developing responsive and user-friendly applications.
+                            Creating
+                            website application with
+                            primary role to ensure the website is visually appealing and easy to navigate ensuring
+                            website's performance and capacity.</p>
+                    </div>
+
+                </div>
+                <div class="maindiv">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3 style="font-size:25px; margin-bottom: 10px;">Software Development</h3>
+                    <div class="divp">
+                        <p style="text-align:justify">Developing robust application softwares software as per user
+                            requirements, user friendly and
+                            interactive applications with
+                            a good user interface.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="maindiv">
+
+                    <i class="fa-sharp fa-solid fa-gear"></i>
+                    <h3 style="font-size:24px; margin-bottom: 10px;"> Software/ Website Maintenance</h3>
+                    <div class="divp">
+                        <p style="text-align:justify">Ensuring all the links on your site are working, regularly
+                            updating content, and fixing any
+                            broken links. It also involves more general housekeeping tasks like backing up your site
+                            regularly and monitoring your site's performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="./images/projpng.png" alt="">
+                    <div>
+                        <u><i>
+                                <h2 style="text-align:center">Portfolio Web Application</h2>
+                            </i></u>
+                    </div>
+                    <div class="work-comp">
+
+                        <h3>Portfolio</h3>
+                        <p>
+                            To Showcase information on self and work accomplished.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./images/watches.jpg" alt="">
+                    <div>
+                        <u><i>
+                                <h2 style="text-align:center">Digital Watches - Online shopping </h2>
+                            </i></u>
+                    </div>
+                    <div class="work-comp">
+                        <h3>Digital Watches - Online shopping Application</h3>
+                        <p>Connecting users to a wide range of digital watches according to user preferences
+                        </p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                        alt="">
+                    <div>
+                        <u><i>
+                                <h2 style="text-align:center">Music Application</h2>
+                            </i></u>
+                    </div>
+                    <div class="work-comp">
+                        <h3>Music Application</h3>
+                        <p>Connecting users to a library of Music worldwide.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="colcontact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="subtitle-div">
+
+                        <i class="fa-sharp fa-solid fa-envelope"></i><a
+                            href="mailto:colacovalerie@gmail.com">colacovalerie@gmail.com</a>
+                        <br><br><i class="fa-solid fa-phone"></i><a href="tel:+917875292534">+917875292534</a>
+                        <br><br>
+                        <a href="https://www.linkedin.com/in/valerie-colaco-5ba1a2113/" target="_blank"><i
+                                class="fa-brands fa-linkedin" style="font-size:20px; margin-bottom: 15px;"
+                                id="link"></i>valerie-colaco@linkedin</a>
+                    </div>
+                    <a href="../images/Valerie Colaco - Resume (1).pdf" download id="btn">Download CV</a>
+                </div>
+                <div class="colcontact-right">
+                    <form>
+                        <input type="text" placeholder="Enter Your Name" id="name" required><br>
+                        <input type="number" placeholder="Enter Your Mobile Number" id="mob" required><br>
+                        <input type="email" placeholder="Enter Your Email-id" id="email" required><br>
+                        <textarea name="Message" id="add" rows="6" placeholder="Your Message"></textarea>
+                        <br><button type="submit" id="btn2" onclick="openpopup()">Submit</button>
+                        <div class="popclass" id="pop">
+                            <i class="fa-solid fa-check"></i>
+                            <h2 id="thank">THANK YOU, </h2>
+                            <h2 id="received">Message has been received successfully.</h2>
+                            <div class="closebutton">
+                                <button onclick="closepopup()" id="close">CLOSE</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="copyright">
+            <h3 id="footerh">&copy; Created by Valerie Genevieve Colaco - 2023</h3>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active");
+
+        }
+
+    </script>
+
+    <script>
+
+        var sidmenu = document.getElementById("sidemenu");
+
+        function openpan() {
+            sidmenu.style.right = "0px";
+
+        }
+
+        function closepan() {
+            sidmenu.style.right = "-120px";
+
+        }
+
+
+    </script>
+
+    <script>
+
+
+        var openpopuop = document.getElementById('pop');
+
+        function openpopup() {
+            openpopuop.classList.add('popupopen');
+        }
+        
+
+        function closepopup() {
+            openpopuop.classList.remove('popupopen');
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
