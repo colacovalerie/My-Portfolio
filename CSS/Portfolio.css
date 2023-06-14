@@ -37,7 +37,8 @@ nav {
 }
 
 span {
-    color: yellow;
+    color: rgb(88, 8, 8);
+    text-shadow: 2px 2px 1px rgb(255, 51, 0);
 }
 
 nav ul li {
@@ -109,7 +110,7 @@ nav ul li a:hover::after {
 }
 
 h3 {
-    text-shadow: 2px 4px 2px yellow;
+    text-shadow: 2px 4px 2px red;
     /* text-shadow: 2px 2px 1px #ffd000; */
     color: rgb(0, 0, 0);
     font-size: 25px;
@@ -118,7 +119,7 @@ h3 {
 
 h4 {
     color: black;
-    font-size: 65px;
+    font-size: 55px;
     letter-spacing: 2px;
     margin-bottom: 40px;
 }
@@ -270,7 +271,7 @@ h4 {
 }
 
 .maindiv {
-    background: linear-gradient(180deg, yellow, rgba(255, 0, 0, 0.5));
+    background: linear-gradient(180deg, yellow, rgb(241, 142, 12));
     border-radius: 30px;
     padding: 20px 10px 10px;
     transition: 0.5s;
@@ -287,6 +288,12 @@ h4 {
 .maindiv:hover {
     background: #ffd000;
     transform: translateY(-10px);
+}
+
+#web, #soft, #softw
+{
+    text-shadow: 2px 2px 2px #ff1100;
+    color: rgb(31, 25, 25)
 }
 
 /* **********My Projects */
@@ -486,7 +493,7 @@ form {
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
-    position:absolute;
+    position:relative;
     top:0%;
     left:50%;
     transform: translate(-50%, -50%) scale(0.1);
@@ -502,7 +509,6 @@ form {
 .popupopen
 {
     visibility: visible;
-    top:50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.4s, top 0.4s;
 }
@@ -554,7 +560,11 @@ form {
     visibility: hidden;
 }
 
-
+#nameval, #phoneval, #emailval, #mssgval
+{
+    text-shadow: 2px 2px 2px black;
+    color: yellow;
+}
 @media only screen and (max-width:400px) {
     .container{
         padding: 10px;
@@ -594,9 +604,6 @@ form {
     
             padding-top: -30px;
             width: 100%;
-    
-    
-    
         }
     
         
@@ -681,6 +688,14 @@ form {
            margin-top: 15px; 
         }
     
+       
+        .text {
+            
+            display:block;
+            font-size: 20px;
+            letter-spacing: 1px;
+    
+        }
 
 }
 
@@ -695,6 +710,8 @@ form {
 }
 
 
+
+
 .homecol2 {
     margin-top: 150px;
 }
@@ -705,7 +722,7 @@ form {
 
     .homecol2 img {
 
-        
+       margin-top: -120px;
         width: 100%;
 
 
@@ -799,6 +816,14 @@ form {
        margin-top: 15px; 
     }
 
+    .text {
+            
+       
+        font-size: 18px;
+        letter-spacing: 1px;
+
+    }
+
 }
 
 
@@ -806,7 +831,7 @@ form {
 @media only screen and (min-width:619px) and (max-width:1004px) {
     .homecol2 {
         margin-top: -20px;
-
+      
     }
 
     .logo {
@@ -817,7 +842,7 @@ form {
 
         padding-top: -30px;
         width: 100%;
-
+      
 
 
     }
@@ -914,6 +939,15 @@ form {
 
        margin-top: 15px; 
     } 
+
+    .text {
+            
+       
+        font-size: 25px;
+        letter-spacing: 1px;
+
+    }
+
     }
 
     @media only screen and (min-width:1005px) and (max-width:1108px)

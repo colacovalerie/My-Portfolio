@@ -23,7 +23,7 @@
 
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#tab">Skills</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
@@ -38,10 +38,12 @@
             <div class="homerow">
                 <div class="homecol1">
                     <div class="heading-text">
-                        <h3>Full Stack developer, Software / Web Developer / Web Designer</h3>
+                        
+                        <!-- <h3>Full Stack developer, Software / Web Developer / Web Designer</h3> -->
                         <h4>Hello, This is
                             <span>Valerie</span>
                             <br>Genevieve Colaco,
+                            <br>I'm a <span class="text stxt"></span>
                         </h4>
                     </div>
                     <div class="profilelink">
@@ -96,7 +98,7 @@
                             requirements of the customers.
                         </p>
                     </div>
-                    <div class="tab-titles">
+                    <div class="tab-titles" id="tab">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -145,7 +147,7 @@
             <div class="services-list">
                 <div class="maindiv">
                     <i class="fa-solid fa-gears"></i>
-                    <h3 style="font-size:25px; margin-bottom: 10px;">Web Application Development</h3>
+                    <h3 id = "web"style="font-size:25px; margin-bottom: 10px;">Web Application Development</h3>
                     <div class="divp">
                         <p style="text-align:justify;">Developing responsive and user-friendly applications.
                             Creating
@@ -157,7 +159,7 @@
                 </div>
                 <div class="maindiv">
                     <i class="fa-brands fa-app-store"></i>
-                    <h3 style="font-size:25px; margin-bottom: 10px;">Software Development</h3>
+                    <h3 id = "soft" style="font-size:25px; margin-bottom: 10px;">Software Development</h3>
                     <div class="divp">
                         <p style="text-align:justify">Developing robust application softwares software as per user
                             requirements, user friendly and
@@ -170,7 +172,7 @@
                 <div class="maindiv">
 
                     <i class="fa-sharp fa-solid fa-gear"></i>
-                    <h3 style="font-size:24px; margin-bottom: 10px;"> Software/ Website Maintenance</h3>
+                    <h3 id = "softw" style="font-size:24px; margin-bottom: 10px;"> Software/ Website Maintenance</h3>
                     <div class="divp">
                         <p style="text-align:justify">Ensuring all the links on your site are working, regularly
                             updating content, and fixing any
@@ -260,7 +262,7 @@
                     <a href="../images/Valerie Colaco - Resume (1).pdf" download id="btn">Download CV</a>
                 </div>
                 <div class="colcontact-right">
-                    <form action="https://formspree.io/f/mwkjyrab"
+                    <!-- <form action="https://formspree.io/f/mwkjyrab"
                     method="POST">
                         <input type="text" placeholder="Enter Your Name" id="name" name="Name" required> <br>
                         <input type="number" placeholder="Enter Your Mobile Number" id="mob" name="Mobile No"><br>
@@ -275,7 +277,29 @@
                                 <button onclick="closepopup()" id="close">CLOSE</button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
+                    <div class="form">
+                        <form action="https://formspree.io/f/mwkjyrab"
+                            method="POST">
+                            <input type="text" placeholder="Enter Your Name" id="name" name="Name" required> <br>
+                            <span id="nameval"></span>
+                            <input type="number" placeholder="Enter Your Mobile Number" id="mob" name="Mobile No" required><br>
+                            <span id="phoneval"></span>
+                            <input type="email" placeholder="Enter Your Email-id" id="email" name="Email" required><br>
+                            <span id="emailval"></span>
+                            <textarea name="Message" id="add" rows="6" placeholder="Your Message" required name="address"></textarea>
+                            <span id="mssgval"></span>
+                            <br><button id="btn2" onclick="register()">Submit</button>
+                            <div class="popclass" id="pop">
+                            <i class="fa-solid fa-check"></i>
+                            <h2 id="thank">THANK YOU, </h2>
+                            <h2 id="received">Message has been received successfully.</h2>
+                            <div class="closebutton">
+                                <button onclick="closepopup()" id="close">CLOSE</button>
+                            </div>
+                
+                        </form>
+                    </div>
 
                 </div>
             </div>
@@ -287,60 +311,160 @@
         </div>
 
     </div>
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active");
-
-        }
-
-    </script>
-
-    <script>
-
-        var sidmenu = document.getElementById("sidemenu");
-
-        function openpan() {
-            sidmenu.style.right = "0px";
-
-        }
-
-        function closepan() {
-            sidmenu.style.right = "-120px";
-
-        }
-
-
-    </script>
-
-    <script>
-
-
-        var openpopuop = document.getElementById('pop');
-
-        function openpopup() {
-            openpopuop.classList.add('popupopen');
-        }
-        
-
-        function closepopup() {
-            openpopuop.classList.remove('popupopen');
-
-        }
-    </script>
-
-
-
-
 </body>
-
 </html>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active");
+
+    }
+
+</script>
+
+<script>
+
+    var sidmenu = document.getElementById("sidemenu");
+
+    function openpan() {
+        sidmenu.style.right = "0px";
+
+    }
+
+    function closepan() {
+        sidmenu.style.right = "-120px";
+
+    }
+
+
+</script>
+
+<script>
+
+
+    var openpopuop = document.getElementById('pop');
+
+    function openpopup() {
+        openpopuop.classList.add('popupopen');
+    }
+
+
+    function closepopup() {
+        openpopuop.classList.remove('popupopen');
+
+    }
+</script>
+
+
+<script>
+
+    function Name() {
+        let username = document.getElementById('name').value
+        let valid = document.getElementById('nameval')
+        if (username == '') {
+            valid.innerHTML = 'this field is required'
+            return 0
+        }
+        else {
+            valid.innerHTML = ""
+            return 1
+        }
+    }
+
+    function phone() {
+        let rphone = document.getElementById('mob').value
+        let valid = document.getElementById('phoneval')
+        if (rphone == '') {
+            valid.innerHTML = 'this field is required'
+            return 0
+        }
+
+        else if (rphone.length == 10) {
+            valid.innerHTML = "";
+            return 1
+        }
+        else {
+            valid.innerHTML = "Mobile must be 10 digits";
+            return 0
+        }
+    }
+    function Email() {
+        let remail = document.getElementById('email').value
+        let valid = document.getElementById('emailval')
+        if (remail == '') {
+            valid.innerHTML = 'this field is required'
+            return 0
+        }
+
+        else if (remail.includes("@")) {
+            valid.innerHTML = "";
+            return 1
+        }
+        else {
+            valid.innerHTML = "incorrect email id";
+            return 0
+        }
+    }
+
+    function add() {
+        let username = document.getElementById('add').value
+        let valid = document.getElementById('mssgval')
+        if (username == '') {
+            valid.innerHTML = 'this field is required'
+            return 0
+        }
+        else {
+            valid.innerHTML = ""
+            return 1
+        }
+    }
+
+
+    function register() {
+        if (Name() && phone() && Email() && add()) {
+            // alert("Details submitted successfull")
+            var openpopuop = document.getElementById('pop')
+            openpopuop.classList.add('popupopen');
+
+        }
+
+
+    }
+
+    function closepopup() {
+        var openpopuop = document.getElementById('pop')
+        openpopuop.classList.remove('popupopen');
+    }
+</script>
+
+<script>
+    let arr = ["Full Stack developer","Software Developer","Web Designer", "Freelancer"]
+
+const text = document.querySelector('.stxt');
+
+function changeText(val){
+    console.log("Hello",arr[val],val)
+    text.textContent = arr[val]
+}
+let i=1
+setInterval(()=>{
+    console.log(i)
+    if(i<arr.length){
+        changeText(i);
+    }
+    else{
+        i=0;
+        changeText(i);
+    }
+    i++;
+},3000)
+</script>
